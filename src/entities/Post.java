@@ -17,9 +17,7 @@ public class Post {
 	
 	private List<Comment> comments = new ArrayList<>();
 
-
-
-	public Post(SimpleDateFormat sdf, Date moment, String title, String content, Integer likes, Integer number) {
+	public Post(Date moment, String title, String content, Integer likes, Integer number) {
 		this.moment = moment;
 		this.title = title;
 		this.content = content;
@@ -59,7 +57,7 @@ public class Post {
 		this.likes = likes;
 	}
 
-	public List<Comment> getComents() {
+	public List<Comment> getComments() {
 		return comments;
 	}
 

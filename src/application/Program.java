@@ -54,7 +54,7 @@ public class Program {
 				System.out.print("Content: ");
 				String content = sc.nextLine();
 				
-				Post p = new Post(null, new Date(), title, content, likes, number);
+				Post p = new Post(new Date(), title, content, likes, number);
 				posts.add(p);
 				
 				clearConsole();
